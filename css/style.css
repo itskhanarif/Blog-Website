@@ -40,6 +40,26 @@ a{
 ul{
   list-style-type: none;
 }
+h1{
+  font-family: var(--Lexend_Deca);
+  font-size: 2.5rem;
+}
+h2{
+  font-family: var(--Lexend_Deca);
+  font-size: 1.3rem;
+}
+h3{
+  font-family: var(--Abel);
+  font-size: 1.3rem;
+}
+button.btn{
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-family: var(--Livvic);
+  font-size: 1rem;
+  cursor: pointer;
+}
 /* ------X------Global Class CSS------X----- */
 
 
@@ -110,15 +130,57 @@ ul{
 }
 /* ----X------Navigation-----X---- */
 
+/* **********Main Site Section Start********** */
+
+/* **********Home Section Start*********** */
+main .home-section{
+  background: url('../images/background-1.jpg');
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+main .home-section .home-background{
+  padding-top: 31rem;
+  text-align: center;
+  color: var(--white);
+}
+main .home-section .home-background h1, h3{
+  margin: 0.3rem;
+}
+main .home-section .home-background .btn{
+  margin: 1.8rem;
+  background: var(--sky);
+}
+main .home-section .home-background .btn:hover{
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+/* **********Home Section End*********** */
+
+/* **********Main Site Section End********** */
 
 /* ---------Viewport less than or equal to 750px--------- */
 @media only screen and (max-width:750px) {
+  /* Global */
+  h1{
+    font-size: 1.8rem;
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+  h3{
+    font-size: 1rem;
+  }
+
   .nav .nav-manu, .nav .nav-items{
     flex-direction: column;
   }
   .nav .toggle-collapase{
     display: initial;
   }
+
 }
 
 
