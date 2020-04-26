@@ -60,6 +60,12 @@ button.btn{
   font-size: 1rem;
   cursor: pointer;
 }
+span{
+  font-family: var(--Abel);
+}
+.container{
+  margin: 0 5vw;
+}
 /* ------X------Global Class CSS------X----- */
 
 
@@ -72,7 +78,6 @@ button.btn{
   overflow: hidden;
   transition: height 1s ease-in-out;
 }
-
 .nav-manu{
   justify-content: space-between;
 }
@@ -132,16 +137,17 @@ button.btn{
 
 /* **********Main Site Section Start********** */
 
+
 /* **********Home Section Start*********** */
 main .home-section{
-  background: url('../images/background-1.jpg');
+  background: url('../images/background-1.png');
   background-size: cover;
   height: 110vh;
   display: flex;
   justify-content: center;
 }
 main .home-section .home-background{
-  padding-top: 31rem;
+  padding-top: 8rem;
   text-align: center;
   color: var(--white);
 }
@@ -158,6 +164,58 @@ main .home-section .home-background .btn:hover{
   color: var(--white);
 }
 /* **********Home Section End*********** */
+
+
+/* ************Blog Post Caruosel section Start************ */
+main .blog{
+    background: url('../images/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+main .blog .blog-post{
+  padding-top: 4rem;
+}
+main .blog .blog-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+main .blog-content .blog-title{
+  padding: 2rem 0;
+}
+main .blog-title .btn-blog{
+  padding: 0.7rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+main .blog-content span{
+  display: block;
+}
+.blog-carousel-section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+  color: var(--gray);
+  background: transparent;
+  font-size: 2rem;
+}
+.owl-theme .owl-nav [class*='owl-']{
+  outline: none;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+  background: transparent;
+  color: var(--text-gray);
+}
+/* ************Blog Post Caruosel section End************ */
 
 /* **********Main Site Section End********** */
 
