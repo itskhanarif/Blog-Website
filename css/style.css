@@ -233,7 +233,7 @@ main .blog-content span{
 }
 main .post-content{
   width: 100%;
-  
+
 }
 main .site-content .post-content > .post-image, .post-title{
   padding: 1rem 2rem;
@@ -269,6 +269,21 @@ main .site-content .post-content .post-title .btn-post{
   padding: 0.7rem 1.5rem;
   border-radius: 0;
   background: var(--sky);
+}
+.site-content .pagination{
+  justify-content: center;
+  margin: 4rem 0;
+  color: var(--text-gray)
+}
+.site-content .pagination a{
+  padding: 0.6rem 0.9rem;
+  margin: 0rem 0.3rem;
+  font-family: var(--Lexend_Deca);
+  border-radius: 2rem;
+}
+.site-content .pagination .page-no{
+  background: var(--midnight);
+  color: var(--white);
 }
 /* ***********Main Site Content End************* */
 
