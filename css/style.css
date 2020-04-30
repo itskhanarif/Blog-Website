@@ -311,6 +311,21 @@ p{
               color: black;
             }
             /* ************Catagory End*********** */
+            /* ***************Popular Post Start*************** */
+            .site-content .main-content-side-bar .popular-post{
+              margin-top: 8rem;
+            }
+            .site-content .main-content-side-bar .popular-post .post-info{
+              background: white!important;
+              padding: 0.4rem 0.1rem!important;
+              bottom: 0!important;
+              left: 1.5rem!important;
+              border-radius: 0!important;
+            }
+            .site-content .main-content-side-bar .popular-post .post-content .post-title a{
+              font-size: 1rem;
+            }
+            /* ***************Popular Post End*************** */
       /* *************Main Site Content Side Bar End************** */
 
 /* **********Main Site Section End********** */
