@@ -313,7 +313,7 @@ p{
             /* ************Catagory End*********** */
             /* ***************Popular Post Start*************** */
             .site-content .main-content-side-bar .popular-post{
-              margin-top: 8rem;
+              margin-top: 18rem;
             }
             .site-content .main-content-side-bar .popular-post .post-info{
               background: white!important;
@@ -347,6 +347,16 @@ p{
               margin: 1rem 0;
             }
             /* *****************Newsletter End************** */
+            /* **************Popular Tags Start************ */
+            .site-content .main-content-side-bar .popular-tags {
+              margin-top: 4rem;
+            }
+            .site-content .main-content-side-bar .popular-tags .tag-btn{
+              background: var(--sky);
+              padding: 0.4rem 1rem;
+              margin: 0.4rem 0.6rem;
+            }
+            /* **************Popular Tags End************ */
       /* *************Main Site Content Side Bar End************** */
 
 /* **********Main Site Section End********** */
