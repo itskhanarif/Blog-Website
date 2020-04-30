@@ -326,6 +326,27 @@ p{
               font-size: 1rem;
             }
             /* ***************Popular Post End*************** */
+            /* *****************Newsletter Start************** */
+            .site-content .main-content-side-bar .newsletter h2{
+              margin-top: 4rem;
+            }
+            .site-content .main-content-side-bar .newsletter .form-element{
+              padding: 0.5rem 2rem;
+            }
+            .site-content .main-content-side-bar .newsletter .form-element .input-element{
+              width: 80%;
+              height: 1.9rem;
+              font-size: 1rem;
+              font-family: var(--Lexend_Deca);
+              padding: 0.3rem 0.5rem;
+            }
+            .site-content .main-content-side-bar .newsletter .form-element .form-btn{
+              background: var(--sky);
+              border-radius: 0;
+              padding: 0.8rem 32%;
+              margin: 1rem 0;
+            }
+            /* *****************Newsletter End************** */
       /* *************Main Site Content Side Bar End************** */
 
 /* **********Main Site Section End********** */
