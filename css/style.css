@@ -150,7 +150,7 @@ p{
 
       /* **********Home Section Start*********** */
       main .home-section{
-        background: url('../images/background-1.png');
+        background: url('../images/background-1.jpg');
         background-size: cover;
         height: 110vh;
         display: flex;
@@ -159,7 +159,7 @@ p{
       main .home-section .home-background{
         padding-top: 8rem;
         text-align: center;
-        color: var(--white);
+        color: var(--midnight);
       }
       main .home-section .home-background h1, h3{
         margin: 0.3rem;
@@ -178,7 +178,7 @@ p{
 
       /* ************Blog Post Caruosel section Start************ */
       main .blog{
-          background: url('../images/Abract01.png');
+          /* background: url('../images/Abract01.png'); */
           background-repeat: no-repeat;
           background-position: right;
           height: 100vh;
@@ -362,8 +362,7 @@ p{
 /* **********Main Site Section End********** */
 /* ***********Footer Start************ */
 footer.footer{
-  height: 50vh;
-  width: 100%;
+  height: 100%;
   background: black;
   position: relative;
 }
@@ -429,8 +428,22 @@ footer.footer .move-up span:hover{
 }
 /* ***********Footer End************ */
 
-/* ---------Viewport less than or equal to 750px--------- */
-@media only screen and (max-width:750px) {
+/* ---------Viewport less than or equal to 520px--------- */
+@media only screen and (max-width:520px) {
+  main .blog{
+    height: 125vh;
+  }
+  .site-content .post-content > .post-image .post-info{
+    display: none;
+  }
+  .nav .toggle-collapase{
+    width : 80%!important;
+  }
+}
+/* ----X-----Viewport less than or equal to 520px-----X---- */
+
+/* ---------Viewport less than or equal to 768px--------- */
+@media only screen and (max-width:768px) {
   /* Global */
   h1{
     font-size: 1.8rem;
@@ -448,9 +461,32 @@ footer.footer .move-up span:hover{
   .nav .toggle-collapase{
     display: initial;
   }
-
+  .site-content .main-content-side-bar .popular-post{
+    margin-top: 5rem!important;
+  }
+  main .site-content{
+    grid-template-columns: 100%;
+  }
+  footer.footer .container{
+    grid-template-columns: repeat(1, 1fr)!important;
+  }
 }
 
+/* ----X-----Viewport less than or equal to 768px-----X---- */
 
+/* ---------Viewport less than or equal to 1130px--------- */
+@media only screen and (max-width:1130px) {
+  .site-content .post-content > .post-image .post-info{
+    left : 2rem!important;
+    bottom : 1.2rem!important;
+    border-radius: 0%!important;
+  }
+  .site-content .main-content-side-bar .popular-post .post-info{
+    display: none!important;
+  }
+  footer.footer .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-/* ----X-----Viewport less than or equal to 750px-----X---- */
+/* ----X-----Viewport less than or equal to 1130px-----X---- */
